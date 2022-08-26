@@ -3,12 +3,12 @@ if len(sys.argv)==1:
     filename=input("""请输入你要锟斤拷化的文件，
 处理好后将放置于当前目录的output.txt文件中（请用GBK编码查看），
 临时文件在当前目录的kjktemp.tmp。
-（命令行帮助可输入nul\help查看）
+（命令行帮助可输入nul\\help查看）
 输入：""")
 else:
     filename=sys.argv[1]
 
-if filename.lower()=="nul\help":
+if filename.lower()==r"nul\help":
     print("""　　　　帮  助
 命令行：
 　　格式：python 自动锟斤拷生成器.py 文件名 [编码]
